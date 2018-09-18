@@ -25,11 +25,12 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-actuator')
-	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.apache.kafka:kafka-streams')
-	compile('org.springframework.kafka:spring-kafka')
-	compile('org.springframework.retry:spring-retry')
+	compile('org.springframework.boot:spring-boot-starter-actuator',
+			'org.springframework.boot:spring-boot-starter-web',
+			'org.apache.kafka:kafka-streams',
+			'org.springframework.kafka:spring-kafka',
+			'org.springframework.retry:spring-retry',
+			'org.snmp4j:snmp4j:2.6.3')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
